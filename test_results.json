@@ -1,0 +1,780 @@
+{
+  "method": "ARM Cortex-M4 emulation of real command.c and ApplyPin; HAL GPIO mocked; not hardware test",
+  "passed": 86,
+  "cases": [
+    {
+      "case": "command_00_initial_0",
+      "initial": 0,
+      "message": "'00\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_01_initial_0",
+      "initial": 0,
+      "message": "'01\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_02_initial_0",
+      "initial": 0,
+      "message": "'02\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_10_initial_0",
+      "initial": 0,
+      "message": "'10\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_11_initial_0",
+      "initial": 0,
+      "message": "'11\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_12_initial_0",
+      "initial": 0,
+      "message": "'12\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_20_initial_0",
+      "initial": 0,
+      "message": "'20\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_21_initial_0",
+      "initial": 0,
+      "message": "'21\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_22_initial_0",
+      "initial": 0,
+      "message": "'22\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_00_initial_1",
+      "initial": 1,
+      "message": "'00\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_01_initial_1",
+      "initial": 1,
+      "message": "'01\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_02_initial_1",
+      "initial": 1,
+      "message": "'02\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_10_initial_1",
+      "initial": 1,
+      "message": "'10\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_11_initial_1",
+      "initial": 1,
+      "message": "'11\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_12_initial_1",
+      "initial": 1,
+      "message": "'12\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_20_initial_1",
+      "initial": 1,
+      "message": "'20\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_21_initial_1",
+      "initial": 1,
+      "message": "'21\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_22_initial_1",
+      "initial": 1,
+      "message": "'22\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_00_initial_2",
+      "initial": 2,
+      "message": "'00\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_01_initial_2",
+      "initial": 2,
+      "message": "'01\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_02_initial_2",
+      "initial": 2,
+      "message": "'02\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_10_initial_2",
+      "initial": 2,
+      "message": "'10\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_11_initial_2",
+      "initial": 2,
+      "message": "'11\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_12_initial_2",
+      "initial": 2,
+      "message": "'12\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_20_initial_2",
+      "initial": 2,
+      "message": "'20\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_21_initial_2",
+      "initial": 2,
+      "message": "'21\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_22_initial_2",
+      "initial": 2,
+      "message": "'22\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_00_initial_3",
+      "initial": 3,
+      "message": "'00\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_01_initial_3",
+      "initial": 3,
+      "message": "'01\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_02_initial_3",
+      "initial": 3,
+      "message": "'02\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_10_initial_3",
+      "initial": 3,
+      "message": "'10\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_11_initial_3",
+      "initial": 3,
+      "message": "'11\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_12_initial_3",
+      "initial": 3,
+      "message": "'12\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_20_initial_3",
+      "initial": 3,
+      "message": "'20\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_21_initial_3",
+      "initial": 3,
+      "message": "'21\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "command_22_initial_3",
+      "initial": 3,
+      "message": "'22\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "''",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'\\r\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'1\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'111\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'2x\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'x21\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "' 11\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'11 \\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'99\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'11'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 0,
+      "message": "'1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "''",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'\\r\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'1\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'111\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'2x\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'x21\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "' 11\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'11 \\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'99\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'11'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 1,
+      "message": "'1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\\n'",
+      "expected": 1,
+      "actual": 1,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "''",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'\\r\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'1\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'111\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'2x\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'x21\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "' 11\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'11 \\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'99\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'11'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 2,
+      "message": "'1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\\n'",
+      "expected": 2,
+      "actual": 2,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "''",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'1\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'111\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'2x\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'x21\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "' 11\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'11 \\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'99\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'11'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_or_incomplete",
+      "initial": 3,
+      "message": "'1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "recovery_after_invalid",
+      "initial": 0,
+      "message": "'x21\\n11\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "toggle_twice",
+      "initial": 0,
+      "message": "'22\\n22\\n'",
+      "expected": 0,
+      "actual": 0,
+      "accepted": 2,
+      "result": "PASS"
+    },
+    {
+      "case": "mixed_sequence",
+      "initial": 0,
+      "message": "'11\\n10\\n01\\n00\\n21\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 5,
+      "result": "PASS"
+    },
+    {
+      "case": "empty_lines_do_not_repeat_toggle",
+      "initial": 0,
+      "message": "'22\\r\\n\\r\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "CR_only",
+      "initial": 0,
+      "message": "'11\\r'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "LF_only",
+      "initial": 0,
+      "message": "'11\\n'",
+      "expected": 3,
+      "actual": 3,
+      "accepted": 1,
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+**/Debug/
+**/Release/
+**/.settings/
+**/.metadata/
+build/
+qa/
+__pycache__/
+ide_workspace*/
